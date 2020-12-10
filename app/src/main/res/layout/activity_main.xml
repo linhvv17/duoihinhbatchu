@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/game_play_background"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <RelativeLayout
+        android:id="@+id/rl_Top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:src="@drawable/avatar"
+            android:scaleType="center"
+            android:layout_height="50dp">
+        </ImageView>
+        <ImageView
+            android:layout_width="120dp"
+            android:src="@drawable/avatar_icon"
+            android:layout_height="50dp">
+        </ImageView>
+        <ImageView
+            android:layout_width="50dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/heart"
+            android:layout_marginLeft="90dp"
+            android:layout_height="50dp">
+        </ImageView>
+        <TextView
+            android:id="@+id/tv_heart"
+            android:layout_width="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="5"
+            android:textSize="32sp"
+            android:layout_marginLeft="100dp"
+            android:layout_height="wrap_content">
+        </TextView>
+        <ImageView
+            android:layout_width="120dp"
+            android:src="@drawable/coin_icon"
+            android:layout_alignParentRight="true"
+            android:layout_height="50dp">
+        </ImageView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:textSize="32sp"
+            android:text="0"
+            android:textColor="#FFFFFF"
+            android:layout_marginLeft="270dp"
+            android:layout_height="wrap_content">
+        </TextView>
+    </RelativeLayout>
+    <Button
+        android:id="@+id/btn_click_next"
+        android:layout_width="wrap_content"
+        android:textColor="#FFFFFF"
+        android:text="Câu Tiếp"
+        android:textSize="30dp"
+        android:background="@drawable/next"
+        android:layout_below="@+id/rl_Top"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:visibility="visible">
+    </Button>
+    <LinearLayout
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/llSuggest1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:weightSum="8">
+
+            <include layout="@layout/button_suggest"
+                android:id="@+id/btn1"/>
+
+            <include layout="@layout/button_suggest"
+                android:id="@+id/btn2"/>
+
+            <include layout="@layout/button_suggest"
+                android:id="@+id/btn3"/>
+
+            <include layout="@layout/button_suggest"
+                android:id="@+id/btn4"/>
+
+            <include layout="@layout/button_suggest"
+                android:id="@+id/btn5"/>
+
+            <include layout="@layout/button_suggest"
+                android:id="@+id/btn6"/>
+
+            <include layout="@layout/button_suggest"
+                android:id="@+id/btn7"/>
+
+            <include layout="@layout/button_suggest"
+                android:id="@+id/btn8"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llSuggest2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:weightSum="8">
+
+            <include layout="@layout/button_suggest"
+                android:id="@+id/btn9"/>
+
+            <include layout="@layout/button_suggest"
+                android:id="@+id/btn10"/>
+
+            <include layout="@layout/button_suggest"
+                android:id="@+id/btn11"/>
+
+            <include layout="@layout/button_suggest"
+                android:id="@+id/btn12"/>
+
+            <include layout="@layout/button_suggest"
+                android:id="@+id/btn13"/>
+
+            <include layout="@layout/button_suggest"
+                android:id="@+id/btn14"/>
+
+            <include layout="@layout/button_suggest"
+                android:id="@+id/btn15"/>
+
+            <include layout="@layout/button_suggest"
+                android:id="@+id/btn16"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/ivImg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="132dp"
+        android:minHeight="186dp"
+        android:src="@drawable/aomua" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ivImg"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="8"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ll_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="8"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>
